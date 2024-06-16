@@ -20,6 +20,13 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- 
+    - custom css link ANIMATED BACKGROUND HEADERS
+  -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css" />
+
+
+  <!-- 
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +34,18 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
     rel="stylesheet">
+
+  <style>
+    .large-header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* z-index: 10; */
+    }
+  </style>
+
+
+
 </head>
 
 <body id="top">
@@ -84,9 +103,7 @@
     </div>
   </header>
 
-
-
-
+    
 
   <main>
     <article>
@@ -95,74 +112,91 @@
         - #HERO
       -->
 
+
+
+
       <section class="hero" id="home">
-        <div class="container">
+        <div style="display:contents;">
 
 
-          <div class="hero-banner grid" data-effect="hover-3">
 
-            <div class="card card--alt hero-banner">
-              <div class="card__img" style="background-image: url(assets/images/artist.jpg)"></div>
-              <div class="card__box card__box--a">
-                <span class="card__box-number">@kush_gaurav</span>
-                <span class="card__box-tags">#c #c++</span>
-              </div>
-              <div class="card__box card__box--d">
-                <span class=" card__box-category">Gaurav Kushwaha</span>
-              </div>
+
+
+          <div class="container">
+
+            <div id="large-header" class="large-header">
+              <canvas id="demo-canvas"></canvas>
+              <!-- <h1 class="main-title">Connect <span class="thin">Three</span></h1> -->
             </div>
 
+            <div class="hero-banner grid" data-effect="hover-3">
 
-            <!-- <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
+              <img src="./assets/images/blue-neon-border-circular-cyber-circle-png-image.png" width="200" height="200"
+                alt="blue neon border circular cyber circle png image" class="rotate-neon">
+
+              <div class="card card--alt hero-banner">
+                <div class="card__img" style="background-image: url(assets/images/artist-removebg-preview.png)"></div>
+                <div class="card__box card__box--a">
+                  <span class="card__box-number">@kush_gaurav</span>
+                  <span class="card__box-tags">#c #c++</span>
+                </div>
+                <div class="card__box card__box--d">
+                  <span class=" card__box-category">Gaurav Kushwaha</span>
+                </div>
+              </div>
+
+
+              <!-- <img src="./assets/images/hero-banner.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
               class="img-cover"> -->
 
 
 
-            <div class="elem elem-1">
-              <p class="elem-title">3</p>
+              <div class="elem elem-1">
+                <p class="elem-title">3</p>
 
-              <p class="elem-text">Years of CS knowledge</p>
+                <p class="elem-text">Years of CS knowledge</p>
+              </div>
+
+
+
+              <div class="elem elem-2">
+                <p class="elem-title">8+</p>
+
+                <p class="elem-text">Projects Completed</p>
+              </div>
+
+              <div class="elem elem-3">
+                <ion-icon name="trophy"></ion-icon>
+              </div>
+
+              <img src="./assets/images/rotate-img.png" width="169" height="172" alt="I'm developer from Prayagraj"
+                class="rotate-img">
+
             </div>
 
 
 
-            <div class="elem elem-2">
-              <p class="elem-title">8+</p>
 
-              <p class="elem-text">Projects Completed</p>
+            <div class="hero-content" style="z-index: 11;">
+
+              <h2 class="hero-title">
+                <span>Hello I'm</span>
+                <strong>Gaurav Kushwaha</strong> Desire to be Developer
+              </h2>
+
+              <p class="hero-text">
+                I have a knack for creating beautiful and functional websites, apps, and games for various devices and
+                platforms.
+              </p>
+
+              <div class="btn-group">
+                <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+
+                <a href="#about" class="btn">About Me</a>
+              </div>
+
             </div>
-
-            <div class="elem elem-3">
-              <ion-icon name="trophy"></ion-icon>
-            </div>
-
-            <img src="./assets/images/rotate-img.png" width="169" height="172" alt="I'm developer from Prayagraj"
-              class="rotate-img">
-
           </div>
-
-
-
-          <div class="hero-content">
-
-            <h2 class="hero-title">
-              <span>Hello I'm</span>
-              <strong>Gaurav Kushwaha</strong> Desire to be Developer
-            </h2>
-
-            <p class="hero-text">
-              I have a knack for creating beautiful and functional websites, apps, and games for various devices and
-              platforms.
-            </p>
-
-            <div class="btn-group">
-              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
-
-              <a href="#about" class="btn">About Me</a>
-            </div>
-
-          </div>
-
         </div>
       </section>
 
@@ -752,6 +786,15 @@
   <script src="./assets/js/gsap.min.js"></script>
   <script src="./assets/js/splitting.min.js"></script>
   <script type="module" src="./assets/js/index.js"></script>
+
+
+  <!-- 
+    - ANIMATED BACKGROUND HEADERS javascript
+  -->
+
+  <script src="./assets/js/TweenLite.min.js"></script>
+  <script src="./assets/js/EasePack.min.js"></script>
+  <script src="./assets/js/demo-1.js"></script>
 
 
 
